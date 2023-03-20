@@ -1,55 +1,78 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
+import {auth} from "../firebase"
+
 import './Signup.css'
 
 function Signup() {
-    const [user, setCurrentUser] = useState("")
-    const [formData, setFormData] = useState({
-        username:"",
-        email: "",
-        password:"", 
-    });
+
+const emailRef = useRef(null)
+const passwordRef = useRef(null)
+const usernameRef = useState(null)
+
+const sign_in = (e) => {
+    e.preventDefault()
+
+  auth.createUserWithEmailAndPassword(
+        emailRef.current.value,
+        passwordRef.current.value,
+        usernameRef.current.value
+    ).then((authUser) => {
+  console.log(authUser)
+
+    }).catch((error) => {
+       alert(error.message)
+    })
+}
+
+
+    // const [user, setCurrentUser] = useState("")
+    // const [formData, setFormData] = useState({
+    //     username:"",
+    //     email: "",
+    //     password:"", 
+    // });
 
 
      
-    function handleChange(e){
-        setFormData({
-            ...formData,
-            [e.target.name] : e.target.value,
+    // function handleChange(e){
+    //     setFormData({
+    //         ...formData,
+    //         [e.target.name] : e.target.value,
         
-        });
-    }
+    //     });
+    // }
 
-    function handleSubmit(e){
-        e.preventDefault()
-        const newUser = {...formData}
+    // function handleSubmit(e){
+    //     e.preventDefault()
+    //     const newUser = {...formData}
       
-        fetch(`/users`,{
-            method:"POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(newUser)
-        }) 
-        .then((res) => {
-            if(res.ok) {
-                res.json().then((user) => {
-                    setCurrentUser(user);
-                });
+    //     fetch(`/users`,{
+    //         method:"POST",
+    //         headers: {
+    //             "Content-Type": "application/json",
+    //         },
+    //         body: JSON.stringify(newUser)
+    //     }) 
+    //     .then((res) => {
+    //         if(res.ok) {
+    //             res.json().then((user) => {
+    //                 setCurrentUser(user);
+    //             });
             
-            } else{
-                res.json().then((errors) => {
-                    console.log(errors);
-                });
-            }
-        })
+    //         } else{
+    //             res.json().then((errors) => {
+    //                 console.log(errors);
+    //             });
+    //         }
+    //     })
    
-        .catch((err) => console.log(err));
-    }
+    //     .catch((err) => console.log(err));
+    // }
 
   return (
     <> 
     
-    <form onSubmit={handleSubmit}> 
+    <form> 
 
       <h1 className='out' >SignUp</h1>
       <h1 className='out'>SignUp</h1> 
@@ -72,8 +95,8 @@ function Signup() {
        placeholder='username'
         name='username'
         id='username'
-        value={formData.username}
-        onChange={handleChange}
+        ref={usernameRef}
+        // onChange={handleChange}
         />
  <br></br>
       <label className='label' >Email</label>
@@ -82,8 +105,8 @@ function Signup() {
        placeholder='Email'
         name='email'
         id='email'
-        value={formData.email}
-        onChange={handleChange}
+        ref={emailRef}
+        // onChange={handleChange}
         />
 <br></br>
 
@@ -93,10 +116,10 @@ function Signup() {
        id='password'
        placeholder='Password'
        name='password' 
-        value={formData.password}
-        onChange={handleChange}
+       ref={passwordRef}
+        // onChange={handleChange}
         />
- <button type='submit' className='button' > Sign Up </button>
+ <button type='submit' className='button'  onClick={sign_in} > Sign Up </button>
 
       </div>
       </form> 
