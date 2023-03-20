@@ -1,0 +1,44 @@
+
+.nav{
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_logo{
+   padding-bottom: 80px;
+   padding-left: 20px;
+   width: 100px;
+   object-fit: contain;
+   margin-top: 60px;
+   transition: transform 450ms;
+  
+}
+
+.nav_logo:hover{
+    transform: scale(1.08)
+}
+
+.user_logo{
+    padding-bottom: 80px;
+    width: 100px; 
+    padding: 50px;
+    object-fit: contain;
+transition: transform 450ms;
+}
+
+.user_logo:hover{
+    transform: scale(1.08)
+}
+
+.nav_button{
+ background-color: transparent;
+  
+}
+
+.user_info{
+    margin-left: 1200px;
+}
+

@@ -1,0 +1,38 @@
+.out{
+    margin-left: 100%;
+}
+
+.header_signup{
+    color: red;
+    margin-top: 106px;
+    margin-bottom: 8px;
+    margin-right: 30px;
+    margin-left: 10%;
+    position: absolute; 
+    top: 0;
+    right: 0;
+    transition: transform 450ms;
+}
+
+
+.header_signup:hover{
+    transform: scale(1.08)
+}
+
+.login_signup{
+    color: red;
+    margin-left: 40%;
+}
+
+.user_logo{
+    padding-bottom: 80px;
+    width: 100px; 
+    padding: 50px;
+    object-fit: contain;
+transition: transform 450ms;
+}
+
+
+.nav_logo{
+    width: 120px;
+}
