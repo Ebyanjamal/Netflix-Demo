@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 // import Row from "../Row/Row";
 // import Banner from "../Banner/Banner";
@@ -11,9 +11,20 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import {HashLink as Link} from 'react-router-hash-link'
 import { Outlet } from "react-router-dom";
 import Signup from "../SignUp/Signup";
-import Login from '../Login/Login'
+import Login from "../Login/Login";
+import Profiles from "../User/Profiles";
 
 function App() {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    fetch("/users")
+      .then((res) => res.json())
+      .then((users) => setUsers(users));
+  }, []);
+
+  // console.log(users);
+
   // const [user, setUser] = useState(null);
   const NavLayout = () => (
     <>
@@ -28,13 +39,13 @@ function App() {
 
     <div className="App">
       {/* {user ? <Nav /> : null} */}
-
+      {/* <Profiles  /> */}
       <Router>
         <Routes>
           <Route path="/Home" element={<NavLayout />} />
-          <Route path="/user" element={<User />} />
+          <Route path="/Profiles" element={<Profiles users={users} />} />
           <Route path="/Signup" element={<Signup />} />
-          <Route path="/" element={<Login/>} />
+          <Route path="/" element={<Login />} />
         </Routes>
       </Router>
       {/* <User/> */}

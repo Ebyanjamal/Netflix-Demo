@@ -21,6 +21,12 @@ function Login() {
     alert(error.message))
   }
 
+  const sign_out = (e) => {
+    auth.sign_out(
+      emailRef.current
+    )
+  }
+
   // const [user, setCurrentUser] = useState(null)
   // const updateUser = (user => setCurrentUser(user))
 
@@ -57,6 +63,7 @@ function Login() {
   return (
    
   <form>  
+ 
       <h1 className='out'>Login</h1>
       <img src="https://reactjsexample.com/content/images/2021/07/Fakeflix.png" 
          alt="Neflix Logo" 
@@ -72,11 +79,10 @@ function Login() {
       <h1 className='title_login' >Unlimited films, TV programmes and
        more.</h1>
       <h1 className='out'>Login</h1>
-
-     
       <div className="form_signup">
+        <h1>Log In </h1>
  <br></br>
-      <label className='label' >Email</label>
+      {/* <label className='label' >Email</label> */}
       <input
        type="email" 
        placeholder='Email'
@@ -86,8 +92,8 @@ function Login() {
         // onChange={handleChange}
         />
 <br></br>
-
-      <label className='label'>Password</label>
+{/* 
+      <label className='label2'>Password</label> */}
       <input
        type="password" 
        id='password'
@@ -96,6 +102,9 @@ function Login() {
       ref={passwordRef}
         // onChange={handleChange}
         />
+ </div>
+ 
+ <div className="form_signup2">
  <button type='submit' className='button' onClick={sign_in} > Log In </button>
  </div>
 

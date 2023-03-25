@@ -3,6 +3,7 @@ import "./Nav.css"
 
 
 function Nav() {
+
   return (
 
     <div className='nav'>
@@ -13,7 +14,7 @@ function Nav() {
           className="nav_logo"/>
     </a>
        
-     <a href='http://localhost:4000/user'> 
+     <a href='http://localhost:4000/profiles'> 
        <img src="https://ih0.redbubble.net/image.618427277.3222/flat,1000x1000,075,f.u2.jpg" alt="Neflix User Logo" className="user_logo" />
        </a>
        

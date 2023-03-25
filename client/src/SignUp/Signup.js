@@ -76,20 +76,21 @@ const sign_in = (e) => {
 
       <h1 className='out' >SignUp</h1>
       <h1 className='out'>SignUp</h1> 
-    
+      <a href='http://localhost:4000/'> 
         <img src="https://reactjsexample.com/content/images/2021/07/Fakeflix.png" 
          alt="Neflix Logo" 
           className="nav_logo"/>
-        
+         </a>
       <h1 className='out'>SignUp</h1>
       <h1 className='out'>SignUp</h1>
       <h1 className='out'>SignUp</h1>
 
     
-      {/* <h1 className='header_signup' >Join  Fakeflix  </h1> */}
+      <h1 className='header_signup' >Join  Fakeflix  </h1>
 
       <div className="form_signup">
-      <label >Username</label>
+      {/* <label >Username</label> */}
+      <h1 className='box_header' > Join Today ✨</h1>
       <input
        type="text" 
        placeholder='username'
@@ -99,7 +100,7 @@ const sign_in = (e) => {
         // onChange={handleChange}
         />
  <br></br>
-      <label className='label' >Email</label>
+      {/* <label className='label' >Email</label> */}
       <input
        type="email" 
        placeholder='Email'
@@ -110,7 +111,7 @@ const sign_in = (e) => {
         />
 <br></br>
 
-      <label className='label'>Password</label>
+      {/* <label className='label'>Password</label> */}
       <input
        type="password" 
        id='password'
@@ -119,8 +120,10 @@ const sign_in = (e) => {
        ref={passwordRef}
         // onChange={handleChange}
         />
- <button type='submit' className='button'  onClick={sign_in} > Sign Up </button>
+      </div>
 
+      <div className="form_signup2">
+      <button type='submit' className='btn' onClick={sign_in} > Sign Up </button>
       </div>
       </form> 
      

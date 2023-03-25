@@ -4,16 +4,28 @@
 
 @import "tailwindcss/utilities";
 
+
 .header_signup{
     color: red;
     margin-bottom: 40px;
     margin-left: 20%;
+   
 }
 
 .form_signup{
     color: white;
-    margin-left: 50%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
+    max-width: 300px;
+    padding: 70px;
+    background-color: firebrick;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px; 
+   display: grid;
+
 }
 
 .out{
@@ -38,3 +50,35 @@
  .button{
     margin-left: 20px;
  }
+
+ .box_header{
+    color: wheat;
+    margin-bottom: 20px;
+ }
+
+ .form_signup >  input{
+    outline-width: 0;
+    height: 40px;
+    margin-bottom: 14px;
+    color: blue;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px;
+ }
+
+ .form_signup2 > button{
+    text-align: center;
+    margin-top: 20px;  
+    height: 40px;
+    padding: 16px 20px ;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: white;
+   background-color: firebrick;
+
+   /* left: 0;
+   right: 0; */
+    
+ }
+
+ 

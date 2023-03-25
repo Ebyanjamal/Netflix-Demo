@@ -7,6 +7,7 @@ import 'firebase/compat/auth';
 
 const firebaseConfig = {
     apiKey: "AIzaSyCSd_tj6vGh6Wwuo5ukgITEuf_5SL_W4JI",
+    
     authDomain: "netflix-clone-phase5.firebaseapp.com",
     projectId: "netflix-clone-phase5",
     storageBucket: "netflix-clone-phase5.appspot.com",

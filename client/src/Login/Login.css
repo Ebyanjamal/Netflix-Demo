@@ -1,9 +1,7 @@
-/* *{
-    background-color: #111;
-} */
+
 .title_login{
-    color: white;
-    text-align: center;
+    color: red;
+   text-align: center;
     /* position: absolute; */
     z-index: 1;
     color: #fff;
@@ -16,6 +14,7 @@
 }
 
 .header_signup{
+    border: black;
     color: red;
     margin-top: 106px;
     margin-bottom: 8px;
@@ -38,6 +37,7 @@
     margin-left: 40%;
 }
 
+
 .user_logo{
     padding-bottom: 80px;
     width: 100px; 
@@ -49,4 +49,15 @@ transition: transform 450ms;
 
 .nav_logo{
     width: 120px;
+}
+
+.form_signup2{
+    text-align: center;
+    margin-top: 20px;  
+    height: 40px;
+}
+
+
+.label2{
+   text-align: center;
 }
