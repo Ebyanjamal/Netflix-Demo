@@ -1,4 +1,6 @@
-
+// import os
+// from dotenv import load_dotenv
+// load_dotenv();
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
@@ -6,8 +8,7 @@ import 'firebase/compat/auth';
 // import 'firebase/compat/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCSd_tj6vGh6Wwuo5ukgITEuf_5SL_W4JI",
-    
+    apiKey: process.env.REACT_APP_apiKey,
     authDomain: "netflix-clone-phase5.firebaseapp.com",
     projectId: "netflix-clone-phase5",
     storageBucket: "netflix-clone-phase5.appspot.com",
