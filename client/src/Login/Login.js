@@ -61,80 +61,93 @@ function Login() {
     // }};
   
   return (
-   
-  <form>  
- 
-      <h1 className='out'>Login</h1>
-      <img src="https://reactjsexample.com/content/images/2021/07/Fakeflix.png" 
-         alt="Neflix Logo" 
-          className="nav_logo"/>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <a href='http://localhost:4000/signUp'> 
-      <h1 className="header_signup" >Join FakeFlix!</h1>
+   <div className="login_screen">
+    <div className="loginscreen_background">
+      <img
+      className='loginScreen_logo'
+      src="" alt="" />
+    
+      <a href='http://localhost:4000/signUp'>   
+      <button className='loginScreen_button' >Sign Up</button>
       </a>
-      {/* <h1 className="login_signup">Log In </h1> */}
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='title_login' >Unlimited films, TV programmes and
-       more.</h1>
-      <h1 className='out'>Login</h1>
-      <div className="form_signup">
-        <h1>Log In </h1>
- <br></br>
-      {/* <label className='label' >Email</label> */}
-      <input
-       type="email" 
-       placeholder='Email'
-        name='email'
-        id='email'
-       ref={emailRef}
-        // onChange={handleChange}
-        />
-<br></br>
-{/* 
-      <label className='label2'>Password</label> */}
-      <input
-       type="password" 
-       id='password'
-       placeholder='Password'
-       name='password' 
-      ref={passwordRef}
-        // onChange={handleChange}
-        />
- </div>
+      <div className="loginScreeen_gradient">
+      </div>
+      
+    </div>
+   </div>
+//   <form>  
  
- <div className="form_signup2">
- <button type='submit' className='button' onClick={sign_in} > Log In </button>
- </div>
+//       <h1 className='out'>Login</h1>
+//       <img src="https://reactjsexample.com/content/images/2021/07/Fakeflix.png" 
+//          alt="Neflix Logo" 
+//           className="nav_logo"/>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <a href='http://localhost:4000/signUp'> 
+//       <h1 className="header_signup" >Join FakeFlix!</h1>
+//       </a>
+//       {/* <h1 className="login_signup">Log In </h1> */}
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='title_login' >Unlimited films, TV programmes and
+//        more.</h1>
+//       <h1 className='out'>Login</h1>
+//       <div className="form_signup">
+//         <h1>Log In </h1>
+//  <br></br>
+//       {/* <label className='label' >Email</label> */}
+//       <input
+//        type="email" 
+//        placeholder='Email'
+//         name='email'
+//         id='email'
+//        ref={emailRef}
+//         // onChange={handleChange}
+//         />
+// <br></br>
+// {/* 
+//       <label className='label2'>Password</label> */}
+//       <input
+//        type="password" 
+//        id='password'
+//        placeholder='Password'
+//        name='password' 
+//       ref={passwordRef}
+//         // onChange={handleChange}
+//         />
+//  </div>
+ 
+//  <div className="form_signup2">
+//  <button type='submit' className='button' onClick={sign_in} > Log In </button>
+//  </div>
 
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      ;<h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1> 
-      <h1 className='out'>Login</h1>
-      <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       ;<h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1> 
+//       <h1 className='out'>Login</h1>
+//       <h1 className='out'>Login</h1>
    
-      </form>
+//       </form>
 )} 
   
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 import './User.css'
 import User from "./User";
 
@@ -7,6 +7,8 @@ function Profiles({ users }) {
   //     return <p>Loading...</p>;
   //   }
   //   console.log(users);
+
+  console.log(users);
 
   return (
     <div>

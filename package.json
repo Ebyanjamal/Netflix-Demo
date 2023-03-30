@@ -4,10 +4,12 @@
     "bootstrap": "^5.2.3",
     "dotenv": "^16.0.3",
     "firebase": "^9.18.0",
+    "movie-trailer": "^3.0.0",
     "react-bootstrap": "^2.7.2",
     "react-bulma-components": "^4.1.0",
     "react-router-dom": "^6.9.0",
-    "react-router-hash-link": "^2.4.3"
+    "react-router-hash-link": "^2.4.3",
+    "react-youtube": "^10.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

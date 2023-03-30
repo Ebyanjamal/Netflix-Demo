@@ -8,6 +8,42 @@
     padding: 20px;
 }
 
+.loginScreen_logo{
+    position: fixed;
+    left: 0;
+    width: 150px;
+    object-fit: contain;
+    /* padding-left: 20px; */
+}
+
+.loginScreen{
+    position: relative;
+    height: 100%;
+    background: url("https://help.nflxext.com/0af6ce3e-b27a-4722-a5f0-e32af4df3045_what_is_netflix_5_en.png");
+}
+
+.loginScreeen_gradient{
+width: 100%;
+z-index:1;
+height: 100vh;
+}
+
+
+.loginScreen_button{
+    position: fixed;
+    right: 20px;
+    top:20px;
+    padding: 10px 20px; 
+    background-color: #e50914;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: transform 450ms;
+}
+
+.loginScreen_button:hover{
+    transform: scale(1.08)
+}
 
 .out{
     margin-left: 100%;
@@ -16,6 +52,7 @@
 .header_signup{
     border: black;
     color: red;
+    font-color: white;
     margin-top: 106px;
     margin-bottom: 8px;
     margin-right: 30px;

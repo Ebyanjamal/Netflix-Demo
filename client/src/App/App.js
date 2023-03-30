@@ -13,9 +13,17 @@ import { Outlet } from "react-router-dom";
 import Signup from "../SignUp/Signup";
 import Login from "../Login/Login";
 import Profiles from "../User/Profiles";
+import 'firebase/compat/firestore';
 
 function App() {
   const [users, setUsers] = useState([]);
+
+
+
+
+  // function fetchall() {
+  //   const db = firebase.firestore();
+  // }
 
   useEffect(() => {
     fetch("/users")
@@ -23,7 +31,7 @@ function App() {
       .then((users) => setUsers(users));
   }, []);
 
-  // console.log(users);
+ console.log(users)
 
   // const [user, setUser] = useState(null);
   const NavLayout = () => (
@@ -43,7 +51,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/Home" element={<NavLayout />} />
-          <Route path="/Profiles" element={<Profiles users={users} />} />
+          <Route path="/Profiles" element={<Profiles users={ users}/>} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/" element={<Login />} />
         </Routes>

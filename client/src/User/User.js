@@ -1,10 +1,10 @@
 // import React, { useEffect } from "react";
 // import { Form } from "react-router-dom";
-// import "./User.css";
+import "./User.css";
 import "../index.css";
 import React from "react";
 import Nav from "../Navbar/Nav";
-import { auth } from "../firebase";
+// rials
 
 function User({ user }) {
 
