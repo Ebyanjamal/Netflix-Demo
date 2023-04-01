@@ -29,7 +29,9 @@ function User({ user }) {
               <h2>{user.email}</h2>
               <div className="profileScreen_plans">
                 <h3>Plans</h3>
+                <a href="http://localhost:4000"> 
               <button className="profileScreen_signout"> Sign Out</button>
+              </a>
                 </div>
               </div>
             </div>

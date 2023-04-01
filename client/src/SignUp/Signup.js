@@ -88,6 +88,9 @@ const sign_in = (e) => {
     
       <h1 className='header_signup' >Join  Fakeflix  </h1>
 
+      <h2 className='signup__title'>Create Your Account</h2>
+      <h3 className='signup__title2'> Use your email and password to watch on your favorite devices</h3>
+
       <div className="form_signup">
       {/* <label >Username</label> */}
       <h1 className='box_header' > Join Today ✨</h1>

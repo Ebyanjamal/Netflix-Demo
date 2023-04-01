@@ -6,7 +6,7 @@ import 'firebase/compat/auth';
 // import 'firebase/compat/firestore';
 
 const firebaseConfig = {
-    apiKey: "PROJECT_API_KEY",
+    apiKey: "AIzaSyCSd_tj6vGh6Wwuo5ukgITEuf_5SL_W4JI",
     
     authDomain: "netflix-clone-phase5.firebaseapp.com",
     projectId: "netflix-clone-phase5",

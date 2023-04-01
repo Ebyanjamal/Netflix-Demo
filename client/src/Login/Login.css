@@ -28,17 +28,45 @@ z-index:1;
 height: 100vh;
 }
 
+.loginScreen__body > h1{
+    font-size: 2.125rem;
+    margin-bottom: 20px;
+}
+.loginScreen__body > h2{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.loginScreen__body > h3{
+font-size: 1.3rem;
+font-weight: 400;
+}
+
+.loginScreen__body{
+ position: absolute;
+ top: 30%;
+ margin-left: 20%;
+ margin-right: auto;
+ text-align: center;
+ z-index: 1;
+ color: #fff;
+ padding: 20px;
+
+}
+
 
 .loginScreen_button{
     position: fixed;
     right: 20px;
     top:20px;
-    padding: 10px 20px; 
+    padding: 20px 40px; 
     background-color: #e50914;
     font-weight: 600;
     border: none;
     cursor: pointer;
     transition: transform 450ms;
+    border-radius: 5px;
 }
 
 .loginScreen_button:hover{
@@ -97,4 +125,32 @@ transition: transform 450ms;
 
 .label2{
    text-align: center;
+}
+
+.loginScreen__input > form > input{
+padding: 10px;
+outline-width: 0;
+height: 30px;
+width: 30%;
+border: none;
+max-width: 600px;
+}
+
+.loginScreen_get{
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color:#e50914;
+    border: none;
+    font-weight: 600;
+    transition: transform 450ms;
+}
+
+.loginScreen_get:hover{
+    transform: scale(1.08)
+}
+
+
+.loginScreen__input{
+    margin: 20px;
 }

@@ -3,7 +3,9 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
-
+*::-webkit-scrollbar{
+   display: none;
+   }
 
 .header_signup{
     color: red;
@@ -32,10 +34,10 @@
     margin-left: 100%;
 }
 
-/* .logo{
+ .logo{
     margin-left: 20%;
     width: 20px;
-} */
+} 
 
 
 .nav_logo{
@@ -60,25 +62,51 @@
     outline-width: 0;
     height: 40px;
     margin-bottom: 14px;
-    color: blue;
     border-radius: 5px;
     border: none;
     padding: 5px 15px;
  }
 
  .form_signup2 > button{
-    text-align: center;
-    margin-top: 20px;  
-    height: 40px;
-    padding: 16px 20px ;
+   padding: 16px 20px;
     font-size: 1rem;
-    border-radius: 5px;
     color: white;
-   background-color: firebrick;
-
-   /* left: 0;
-   right: 0; */
-    
+    background-color:#e50914;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: transform 450ms;
  }
-
  
+ .form_signup2 > button:hover{
+   transform: scale(1.08)
+}
+
+.signup__title{
+   font-size: 2rem;
+   font-weight: 400;
+   position: absolute;
+   top: 30%;
+   margin-left: 35%;
+   margin-right: auto;
+   text-align: center;
+   z-index: 1;
+   color: #fff;
+   padding: 20px;
+  
+}
+
+.signup__title2{
+   font-size: 1.2rem;
+   font-weight: 400;
+   margin-bottom: 20px;
+   position: absolute;
+   top: 40%;
+   margin-left: 25%;
+   margin-right: auto;
+   text-align: center;
+   z-index: 1;
+   color: #fff;
+   padding: 20px;
+
+}
